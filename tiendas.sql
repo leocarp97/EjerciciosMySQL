@@ -1,6 +1,6 @@
-DROP DATABASE IF EXISTS tienda;
-CREATE DATABASE tienda CHARACTER SET utf8mb4;
-USE tienda;
+DROP DATABASE IF EXISTS tiendas;
+CREATE DATABASE tiendas CHARACTER SET utf8mb4;
+USE tiendas;
 
 CREATE TABLE fabricante (
   codigo INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
@@ -193,6 +193,6 @@ SELECT DISTINCT f.nombre FROM FABRICANTE f, PRODUCTO p
 WHERE f.codigo IN (p.codigo_fabricante) 
 );
 
-select * from tienda.producto;
 /* USAR SUBCONSULTAS HAVING
 Ejercicio 1*/
+SELECT * FROM Producto WHERE Precio>120 && Precio<202;
